@@ -95,7 +95,7 @@ namespace SkiaSharp.TextBlocks
         /// <returns></returns>
         public SKSize Measure(float maxWidth, TextShaper textShaper = null)
         {
-            var calculated = Layout(null, new SKRect(0, 0, maxWidth, float.MaxValue), FlowDirection.LeftToRight, textShaper ?? new TextShaper(false));
+            var calculated = Layout(null, new SKRect(0, 0, maxWidth, float.MaxValue), FlowDirection.LeftToRight, textShaper ?? new TextShaper(true));
             return new SKSize(calculated.Width, calculated.Height);
         }
 

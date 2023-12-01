@@ -245,7 +245,7 @@ namespace SkiaSharp.TextBlocks
         {
 
             if (textShaper == null)
-                textShaper = new TextShaper(false);
+                textShaper = new TextShaper(true);
 
             if (GlyphSpan == null)
             {
